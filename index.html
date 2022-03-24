@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="data-x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048小游戏</title>
+    <!-- 引入CSS样式 -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>2048小游戏</h1>
+        <div class="maxScore">最高分：<span class="maxNumber">10000</span>&nbsp;分</div>
+        <div class="gameBody">
+            <div class="row">
+                <div class="cell emptyCell x0y0" data-x="0" data-y="0"></div>
+                <div class="cell emptyCell x0y1" data-x="0" data-y="1"></div>
+                <div class="cell emptyCell x0y2" data-x="0" data-y="2"></div>
+                <div class="cell emptyCell x0y3" data-x="0" data-y="3"></div>
+            </div>
+            <div class="row">
+                <div class="cell emptyCell x1y0" data-x="1" data-y="0"></div>
+                <div class="cell emptyCell x1y1" data-x="1" data-y="1"></div>
+                <div class="cell emptyCell x1y2" data-x="1" data-y="2"></div>
+                <div class="cell emptyCell x1y3" data-x="1" data-y="3"></div>
+            </div>
+            <div class="row">
+                <div class="cell emptyCell x2y0" data-x="2" data-y="0"></div>
+                <div class="cell emptyCell x2y1" data-x="2" data-y="1"></div>
+                <div class="cell emptyCell x2y2" data-x="2" data-y="2"></div>
+                <div class="cell emptyCell x2y3" data-x="2" data-y="3"></div>
+            </div>
+            <div class="row">
+                <div class="cell emptyCell x3y0" data-x="3" data-y="0"></div>
+                <div class="cell emptyCell x3y1" data-x="3" data-y="1"></div>
+                <div class="cell emptyCell x3y2" data-x="3" data-y="2"></div>
+                <div class="cell emptyCell x3y3" data-x="3" data-y="3"></div>
+            </div>
+        </div>
+        <div class="tip">
+            <p>网页版：请用键盘的方向键进行操作。</p>
+        </div>
+        <div class="gameScore">
+            当前得分：<span class="currentNumber">0</span>&nbsp;分
+            <button class="btn">刷新</button>
+        </div>
+    </div>
+    <div class="model">
+        <div class="model_body">
+            <div class="out_box">
+                <h1>2048小游戏</h1>
+                <div class="box">本次得分：<span>0</span>&nbsp;分</div>
+                <div class="text">Game Over!</div>
+                <div class="model_footer">
+                    <button class="close">关闭</button>
+                    <button class="again">再来一次</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 引入js脚本 -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
